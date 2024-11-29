@@ -1,0 +1,64 @@
+body {
+    font-family: "Outfit";
+    font-style: normal;
+}
+
+.logo {
+    font-family: "Outfit";
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.nav-item:hover {
+    text-decoration: underline 1px solid black;
+    text-underline-offset: 4px;
+}
+
+.depanatas {
+    font-family: "Outfit";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+}
+
+.depanbawah {
+    font-size: 20px;
+}
+
+.linkfooter {
+    text-decoration: none;
+}
+
+.linkfooter:hover {
+    text-decoration: underline 1px solid black;
+    text-underline-offset: 4px;
+}
+
+.tulisanfooter {
+    font-size: smaller;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card {
+    transition: transform 0.2s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.judulvideo {
+    font-weight: 600;
+    font-size: 25px;
+}

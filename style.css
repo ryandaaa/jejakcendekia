@@ -1,0 +1,53 @@
+body {
+    font-family: "Outfit";
+    font-style: normal;
+}
+
+.logo {
+    font-family: "Outfit";
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.nav-item:hover {
+    text-decoration: underline 1px solid black;
+    text-underline-offset: 4px;
+}
+
+.depan {
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.depanatas {
+    font-family: "Outfit";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.depanbawah {
+    font-size: 20px;
+}
+
+.fiturunggulan {
+    margin: 0;
+    padding: 0;
+}
+
+.linkfooter {
+    text-decoration: none;
+}
+
+.linkfooter:hover {
+    text-decoration: underline 1px solid black;
+    text-underline-offset: 4px;
+}
+
+.tulisanfooter {
+    font-size: smaller;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
