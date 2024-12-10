@@ -57,3 +57,15 @@ body {
     font-size: 14px; /* Sesuaikan ukuran teks */
     text-align: center;
 }
+
+.pilihan {
+    display: flex;
+    flex-wrap: wrap;  /* Tombol akan membungkus jika lebar layar terlalu sempit */
+    justify-content: space-evenly;  /* Tombol akan terdistribusi dengan jarak yang merata */
+}
+
+.pilihan a {
+    flex: 1 1 45%;  /* Tombol akan menempati 45% dari lebar kontainer */
+    margin: 5px;  /* Menambahkan jarak antara tombol */
+    text-align: center;
+}
