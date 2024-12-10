@@ -46,3 +46,14 @@ body {
     padding-top: 0;
     padding-bottom: 20px;
 }
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tombol-mulai {
+    width: 150px; /* Atur lebar tombol */
+    padding: 10px; /* Sesuaikan padding */
+    font-size: 14px; /* Sesuaikan ukuran teks */
+    text-align: center;
+}

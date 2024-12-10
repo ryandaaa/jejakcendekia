@@ -15,6 +15,10 @@ body {
     text-underline-offset: 4px;
 }
 
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .depanatas {
     font-family: "Outfit";
     font-weight: 700;

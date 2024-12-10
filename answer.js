@@ -5,20 +5,30 @@
     // Array soal dan jawaban
     let questions = [
         {
-            text: "Yo Ndak tau Kok Tanya ____",
-            options: ["Saya", "Jokowi", "Prabowo", "Anies"],
-            correct: "Saya",
+            text: "Presiden _____ pidato kenegaraan pada upacara HUT Kemerdekaan.",
+            options: ["Membaca", "Membacakan", "Dibaca", "Dibacakan"],
+            correct: "Membacakan",
         },
         {
-            text: "Ibukota Indonesia adalah ____",
-            options: ["Surabaya", "Jakarta", "Bandung", "Medan"],
-            correct: "Jakarta",
+            text: "Para siswa _____ kerja praktik di pabrik tersebut minggu depan.",
+            options: ["Akan Melaksanakan", "Melaksanakan", "Telah Melaksanakan", "Sedang Melaksanakan"],
+            correct: "Akan Melaksanakan",
         },
         {
-            text: "Gunung tertinggi di dunia adalah ____",
-            options: ["Fuji", "Kilimanjaro", "Everest", "Alps"],
-            correct: "Everest",
+            text: "Kami _____ rapat Himalkom dengan sangat serius.",
+            options: ["Dihadiri", "Dihadirkan", "Menghadiri", "Menghadirkan"],
+            correct: "Menghadiri",
         },
+        {
+            text: "Gedung museum _____ dengan arsitektur modern yang menakjubkan.",
+            options: ["Dibangun", "Membangun", "Bangun", "Pembangunan"],
+            correct: "Dibangun",
+        },
+        {
+            text: "Tim peneliti _____ berbagai macam sampel untuk pengujian.",
+            options: ["Analisis", "Dianalisis", "Penganalisisan", "Menganalisis"],
+            correct: "Menganalisis",
+        }
     ];
 
     let currentQuestionIndex = 0; // Indeks soal saat ini
@@ -78,12 +88,30 @@
 
     function showResult() {
         const cardBody = document.querySelector(".card-body");
-
-        // Tampilkan hasil akhir
-        cardBody.innerHTML = `
-            <h5 class="card-title">Hasil</h5>
-            <p class="card-text">Skor Anda: ${score} dari ${questions.length}</p>
-            <button class="btn btn-dark" onclick="location.reload()">Ulangi</button>
-        `;
+    
+        // Kosongkan konten card-body sebelum menampilkan hasil
+        cardBody.innerHTML = '';
+    
+        // Buat elemen hasil
+        const resultTitle = document.createElement("h5");
+        resultTitle.classList.add("card-title");
+        resultTitle.textContent = "Hasil";
+    
+        const resultText = document.createElement("p");
+        resultText.classList.add("card-text");
+        resultText.textContent = `Skor Anda: ${score} dari ${questions.length}`;
+    
+        const restartButton = document.createElement("button");
+        restartButton.classList.add("btn", "btn-dark");
+        restartButton.textContent = "Ulangi";
+        restartButton.addEventListener("click", () => {
+            location.reload();  // Atau Anda bisa menggunakan logika lain untuk mereset kuis
+        });
+    
+        // Tambahkan elemen-elemen ke dalam cardBody
+        cardBody.appendChild(resultTitle);
+        cardBody.appendChild(resultText);
+        cardBody.appendChild(restartButton);
     }
+    
 })();
